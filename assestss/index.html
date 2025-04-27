@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1 class="app">WEATHER APP</h1>
+            <div class="btncontainer">
+                <button class="yourweather but1">Your Weather</button>
+                <button class="searchweather but1">Search Weather</button>
+            </div>
+            <div class="weather-conatiner">
+            <div class="grandlocation subclass">
+                <img src="/assestss/location.png" alt="" width="80" height="80">
+                <h2 class="heading">Grant Location Access</h2>
+                <p class="allow">Allow Access To Get Weather Information</p>
+                <button class="grantaccess">Grant Access</button>
+            </div>
+            <form class="formconatiner subclass" data-searchForm>
+               <input placeholder="Search for city..." class="datasearch">
+               <button class="searchbutt" type="submit">
+                <img src="/assestss/search.png" alt="" width="20" height="20">
+               </button>
+            </form>
+            <!-- loading screencontainer -->
+             <div class="lodingcontainer subclass">
+                <img src="/assestss/loading.gif" alt="" width="150" height="150">
+                <p class="load">Loading</p>
+             </div>
+             <!-- show weatherinfo -->
+              <div class="userinputcontainer subclass">
+                <div class="icon">
+                <div class="name"></div>
+                <img src="" alt="" class="citycode">
+                </div>
+                <p class="description"></p>
+                <img src="" alt="" class="wheaterimg">
+                <p class="datatemp"></p>
+                <div class="parametercontainer">
+                    <div class="parameter">
+                        <img src="/assestss/wind.png" alt="" width="60px">
+                        <p class="parametertitle">Windspeed</p>
+                        <p class="parametervalue value"></p>
+
+                        
+                    </div>
+                    <div class="parameter">
+                        <img src="/assestss/humidity.png" alt="" width="60px">
+                        <p class="parametertitle">humidity</p>
+                        <p class="parameterhumidity value"></p>
+                            
+                        
+                    </div>
+                    <div class="parameter">
+                        <img src="/assestss/cloud.png" alt="" width="60px">
+                        <p class="parametertitle">Clouds</p>
+                        <p class="parameterclouds value">
+                            
+                        </p>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+   <script src="script.js"></script> 
+</body>
+</html>
